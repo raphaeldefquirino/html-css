@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    background-color: goldenrod;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:red;
+}
+h2{
+    color: yellowgreen;
+}
+
+p{
+    color: purple;
+}

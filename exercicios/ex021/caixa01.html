@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+
+        body{
+            background: linear-gradient(to right, black, red);
+            display: block;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+        main{
+            background-color: white;
+            width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+            margin: auto;
+           border: 5px dashed black;
+        }
+        
+       
+       div{
+        text-decoration: underline;
+        color: blue;
+         text-align: center;
+       }
+
+       div:hover{
+        background-color: lightcoral;
+       
+
+       }
+
+       div > p{
+        display: none;
+        text-align: center;
+       }
+
+       div:hover > p{
+        display: block;
+        text-align: center;
+       }
+
+       div > p::after{
+        content: "[link]";
+        color: lightgray;
+       }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de caixa box-level</h1>
+        <p>Páragrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+        <div>
+            texto
+            <p> <a href="https://www.xvideos.com" target="_blank">escondido</a></p>
+        </div>
+    </main>
+</body>
+</html>

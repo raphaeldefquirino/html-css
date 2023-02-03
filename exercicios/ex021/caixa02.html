@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montando site usando Caixas</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: serif;
+        }
+
+        header{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px black;
+        }
+        
+        header > h1{
+            text-align: center;
+        }
+
+        header > nav{
+            background-color: rgba(15, 27, 131, 0.644);
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 5px;
+            margin-bottom: 20px;
+            
+        }
+
+        header > nav > a {
+            margin-right: 30px;
+        }
+
+
+        main{
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 3px 3px 8px black;
+            margin-top: 40px;
+        }
+
+        main > article > h1{
+            color:rgba(82, 75, 177, 0.733);
+        }
+
+        a:hover {
+            color: rgba(150, 58, 55, 0.603);
+        }
+
+        main > article{
+            font-size: 1.3em;
+            background-color: lightgray;
+            
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>Site usando cixas semânticas</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section>ESPORTES POLITÍCA RECEITAS</section>
+        <article>
+            <h1>Contronto de sábado</h1>
+        <figure><img src="#" alt="Palmeiras x Flamengo"></figure>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas asperiores numquam quam molestiae? Tenetur minima perferendis animi consectetur rem suscipit id, quis laudantium, laborum cum, quisquam ipsa earum libero impedit.</article>
+    </main>
+    <footer>
+    Web Site desenvolvido por Raphael
+    <nav>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Telegram</a>
+    </nav>
+</footer>
+</body>
+</html>

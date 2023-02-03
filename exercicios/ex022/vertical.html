@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste caixas verticais</title>
+    <style>
+
+        #container{
+            position: relative;
+            background-color: purple;
+            height: 91vh;
+            padding: 10px;
+            width: 480px;
+        }
+
+        #conteudo{
+            position: absolute;
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        #conteudo-sublinhado{
+            position: absolute;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            background-image: url(../../grupo-e-remaster/imagens/imagem-fundo.jpg);
+            background-size: cover;
+            background-position: center center;
+            left: 0%;
+            top: 50%;
+
+            transform: translate(-0%, -50%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id = "container">
+
+        <article id = "conteudo-sublinhado">
+          
+        </article>
+
+        <article id = "conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

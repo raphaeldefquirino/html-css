@@ -1,0 +1,40 @@
+@charset "UTF-8"; 
+main{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+    width: 600px;
+}
+
+body{
+
+background: linear-gradient(to right, #042940, #9FC131);
+
+}
+
+h1{
+    color: rgb(96, 107, 54);
+    font-size: 2em;
+    
+}
+
+#principal{
+    text-align: center;
+}
+
+h2{
+    color: #041e2e;
+}
+
+.basico{
+    color: #DBF227;
+}
+
+.intermediario{
+    color: orange;
+}
+
+.avancado{
+    color: red;
+}

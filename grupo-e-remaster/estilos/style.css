@@ -1,0 +1,977 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: fontqatar;
+    src: url(../fontes/Qatar2022Arabic-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: titlefont;
+    src: url(../fontes/BreeSerif-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#index{
+    background-color: lightgray;
+    background-image: url(../imagens/imagem-fundo.jpg);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+        nav.dp-menu{
+            text-align: right;
+            font-weight: bold;
+            font-family: fontqatar;
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1{
+            z-index: 2;
+            position: absolute;
+            padding-left: 40px;
+            margin-bottom: -50px;
+            font-weight: bold;
+            font-family: fontqatar;
+            color: white;
+            background-color: crimson;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.658);
+        }
+
+        nav.dp-menu a{
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        nav.dp-menu ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: crimson;
+        }
+
+        nav.dp-menu ul li{
+            display: inline;
+            position: relative;
+            width: 150px;
+          
+        }
+
+        .dp-menu ul li a{
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .dp-menu ul li a:hover{
+            background-color: white;
+            color:red;
+            transition-duration: .3s;
+
+        }
+
+        /*sub menu */
+
+        .dp-menu ul ul{
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+
+        nav.dp-menu ul li:hover ul{
+            display: block;  
+            min-width: 150px;
+            text-align: center;       
+        }
+
+        nav.dp-menu ul ul li a{
+            display: block;
+        }
+
+        /* fim sub menu*/
+
+        main{
+            max-width: 700px;
+            background-color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            margin-bottom: 10px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.644);
+            margin: auto;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        main h1,h2{
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            font-family: titlefont;
+            font-weight: normal;
+        }
+
+        main h2{
+            text-align: left;
+        }
+        
+
+        main p{
+            line-height: 2.2em;
+            text-indent: 30px;
+            padding: 10px;
+            text-align: justify;
+            font-size: 1.1em;
+        }
+
+
+
+        img{
+            width: 50%;
+            height: 50%;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 25px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.603);
+        }
+        /* seleções --
+           -- seleção da alemanha
+        */
+
+        .container{
+            position: relative;
+            width: 70vw;
+            min-height: 200vh;
+            margin: auto;
+
+        }
+
+        div{
+            border: 2px solid black;
+           
+        }
+
+        body#alemanha{
+            background-image: url(../selecoes/imagens/fundo-alemanha.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        
+
+        .bandeira#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 17%;
+            height: 10%;
+            background-image: url(../selecoes/imagens/bandeira-alemanha.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5%;
+            left: 5%;
+            transform: translate(0%, 0%);
+        }
+
+        .escudo#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/escudo-alemanha.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador01#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador1ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador02#alemanha{
+            position: absolute;
+            background-color: red;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador2ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+
+        .jogador03#alemanha{
+            position: absolute;
+            background-color: green;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador3ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador04#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador4ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador05#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador5ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador06#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador6ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador07#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador7ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador08#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador8ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        
+        .jogador09#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador9ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador10#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador10ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador11#alemanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador11ale.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        /* seleção da espanha */
+
+
+        body#espanha{
+            background-image: url(../selecoes/imagens/fundoesp.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        
+
+        .bandeira#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 17%;
+            height: 10%;
+            background-image: url(../selecoes/imagens/bendeira-espanha.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5%;
+            left: 5%;
+            transform: translate(0%, 0%);
+        }
+
+        .escudo#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/escudo-espanha.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador01#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador1esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador02#espanha{
+            position: absolute;
+            background-color: red;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador2esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+
+        .jogador03#espanha{
+            position: absolute;
+            background-color: green;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador3esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador04#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador4esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador05#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador5esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador06#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador6esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador07#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador7esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador08#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador8esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        
+        .jogador09#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador9esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador10#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador10esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador11#espanha{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador11esp.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        /* costa rica */
+
+        body#costa{
+            background-image: url(../selecoes/imagens/fundocosta.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        
+
+        .bandeira#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 17%;
+            height: 10%;
+            background-image: url(../selecoes/imagens/bandeira-costa-rica.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5%;
+            left: 5%;
+            transform: translate(0%, 0%);
+        }
+
+        .escudo#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/escudo-costa-rica.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador01#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador1costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador02#costa{
+            position: absolute;
+            background-color: red;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador2costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+
+        .jogador03#costa{
+            position: absolute;
+            background-color: green;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador3costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador04#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador4costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador05#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador5costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador06#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador6costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador07#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador7costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador08#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador8costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        
+        .jogador09#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador9costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador10#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador10costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador11#costa{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador11costa.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        /* selecao japao*/ 
+        
+        body#japao{
+            background-image: url(../selecoes/imagens/fundojap.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        
+
+        .bandeira#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 17%;
+            height: 10%;
+            background-image: url(../selecoes/imagens/bandeirajapao.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 5%;
+            left: 5%;
+            transform: translate(0%, 0%);
+        }
+
+        .escudo#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/escudo-costa-rica.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador01#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador1jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador02#japao{
+            position: absolute;
+            background-color: red;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador2jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+
+        .jogador03#japao{
+            position: absolute;
+            background-color: green;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador3jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 20%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador04#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador4jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador05#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador5jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador06#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador6jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador07#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador7jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 43%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador08#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador8jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 10%;
+            transform: translate(0%, 0%);
+        }
+
+        
+        .jogador09#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador9jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 33%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador10#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador10jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 56%;
+            transform: translate(0%, 0%);
+        }
+
+        .jogador11#japao{
+            position: absolute;
+            background-color: yellow;
+            width: 20%;
+            height: 20%;
+            background-image: url(../selecoes/imagens/jogador11jap.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 66%;
+            left: 79%;
+            transform: translate(0%, 0%);
+        }
+
+        /*fim das seleções*/
+
+        footer{
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            align-items: center;
+            bottom: 1;
+            display: flex;
+            position: absolute;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        #rodape-index{
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            align-items: center;
+            bottom: 0;
+            display: flex;
+            position: absolute;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        footer p{
+            text-align: center;
+            padding: 5px;
+            font-size: .8em;
+            font-weight: normal;
+            font-family: fontqatar;
+        }

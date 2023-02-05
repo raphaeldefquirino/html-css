@@ -5,17 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelos de formulario</title>
+    <style></style>
 </head>
 <body>
     <h1>Formularios</h1>
 
     <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="iusu">Usuário</label>
-            <input type="text" name="usuario" id="iusu" required minl>
+        <p>
+            <label for="iusu">Nome</label>
+            <input type="text" name="usuario " id="iusu" required minl placeholder="Digite o seu nome" autocomplete="naem">
         </p>
-        <p><label for="isen">Senha</label>
-        <input type="password" name="senha" id="isen" required></p>
-        <p><input type="submit" value="Enviar"></p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="senha" id="isen" required placeholder="Digite a sua Senha" autocomplete="new-password">
+         </p>
+
+         <p>
+            <label for="imed">Media</label>
+            <input type="number" name="med" id="imed" min="0" max="10" placeholder="0 a 10" step="0.1">
+         </p>
+
+         <p>
+            <label for="imon">Mês</label>
+            <input type="month" name="mon" id="imon" placeholder="">
+         </p>
+
+         <p>
+            <label for="idate">Data</label>
+            <input type="date" name="date" id="idate">
+         </p>
+
+         <p>
+            <label for="ihr">Hora</label>
+            <input type="time" name="hr" id="ihr" >
+         </p>
+
+
+        <p>
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+        </p>
+        
     </form>
 
 </body>

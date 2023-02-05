@@ -1,0 +1,22 @@
+@charset "UTF8-8";
+
+/* Estilos para impressoras*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: "Este artigo foi emitido pela cnn";
+}

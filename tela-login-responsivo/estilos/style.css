@@ -69,17 +69,37 @@ div.campo label{
     display: none;
 }
 
-div.campo{
-    
-} 
+div.campo span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+
+div.campo input{
+    background-color: #58c4c0;
+    font-size: 1em;
+    width: 80%;
+    transform: translateY(-15px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+}
+
+div.campo input:focus-within{
+    background-color: white;
+    border: none;
+}
 
 form div.campo{
     background-color: #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    padding: 4px;
 }
 
 span{

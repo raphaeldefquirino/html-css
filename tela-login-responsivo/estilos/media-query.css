@@ -14,7 +14,9 @@
     }
 
     section#login{
-        width: 80vw
+        width: 80vw;
+        height: 320px;
+        
     }    
 
     section#login div#imagem{
@@ -33,6 +35,10 @@
         margin: auto;
     }
     
+    div.campo input{
+       width: calc(100% - 300px);
+    }
+
 }
 
 @media screen and (min-width:992px) {
@@ -43,6 +49,7 @@
 
     section#login{
         width: 950px;
+        height: 400px;
     }
 
     section#login div#imagem{

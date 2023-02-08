@@ -69,7 +69,9 @@ div.campo label{
     display: none;
 }
 
-div.campo 
+div.campo{
+    
+} 
 
 form div.campo{
     background-color: #5f2c82;
@@ -125,3 +127,4 @@ form a.botao:hover{
 form a.botao span{
     font-size: 0.8em;
 }
+
